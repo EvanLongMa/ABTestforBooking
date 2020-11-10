@@ -291,7 +291,7 @@ mean(rounds_ran)
 #Or if not including the one time not stopping early and going to 2317 rounds, then an average of ~1094 rounds/iterations
 
 #Note, that this varies greatly when rerunning with different seeds/randomizations.
-#This run is a pretty balanced one in terms of having just one non-stopping eraly,
+#This run is a pretty balanced one in terms of having just one non-stopping early,
 #and 2 lower bounds as well as 7 upper bound reasons for stopping
 
 
