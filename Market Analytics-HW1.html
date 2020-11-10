@@ -13548,7 +13548,7 @@ div#notebook {
 <span class="n">p_bar</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">p_head</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 
 <span class="c1">#difference of conversion rate </span>
-<span class="n">optimal_sample</span> <span class="o">=</span> <span class="p">(</span><span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">p_bar</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p_bar</span><span class="p">))</span> <span class="o">+</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">+</span><span class="n">p_head</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p_head</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span><span class="p">((</span><span class="n">p_head</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">optimal_sample</span> <span class="o">=</span> <span class="p">(</span><span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.975</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">p_bar</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p_bar</span><span class="p">))</span> <span class="o">+</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">+</span><span class="n">p_head</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p_head</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span><span class="p">((</span><span class="n">p_head</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">optimal_sample</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">optimal_sample</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The optimal size should be:&quot;</span><span class="p">,</span> <span class="n">optimal_sample</span><span class="p">)</span>
@@ -13568,7 +13568,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The optimal size should be: 2317
+<pre>The optimal size should be: 2941
 </pre>
 </div>
 </div>
@@ -13662,39 +13662,39 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>5373</th>
+      <th>114113</th>
       <td>False</td>
       <td>A</td>
-      <td>2019-11-12</td>
-      <td>0x92afb1</td>
+      <td>2020-06-13</td>
+      <td>0x7d03c2</td>
     </tr>
     <tr>
-      <th>12667</th>
+      <th>35995</th>
       <td>True</td>
       <td>A</td>
-      <td>2020-07-17</td>
-      <td>0x4af155</td>
+      <td>2020-03-09</td>
+      <td>0x57be29</td>
     </tr>
     <tr>
-      <th>111748</th>
-      <td>False</td>
+      <th>88795</th>
+      <td>True</td>
       <td>A</td>
-      <td>2019-11-17</td>
-      <td>0x821879</td>
+      <td>2020-02-22</td>
+      <td>0x337198</td>
     </tr>
     <tr>
-      <th>58344</th>
+      <th>108132</th>
       <td>False</td>
       <td>A</td>
-      <td>2020-05-05</td>
-      <td>0x675e3b</td>
+      <td>2020-01-24</td>
+      <td>0x2c6370</td>
     </tr>
     <tr>
-      <th>50066</th>
+      <th>68647</th>
       <td>False</td>
       <td>A</td>
-      <td>2019-09-20</td>
-      <td>0x8235c5</td>
+      <td>2020-05-27</td>
+      <td>0x1b05ff</td>
     </tr>
     <tr>
       <th>...</th>
@@ -13704,43 +13704,43 @@ div#notebook {
       <td>...</td>
     </tr>
     <tr>
-      <th>88828</th>
+      <th>120578</th>
       <td>False</td>
       <td>A</td>
-      <td>2020-03-01</td>
-      <td>0x112907</td>
+      <td>2020-01-08</td>
+      <td>0x47ae2c</td>
     </tr>
     <tr>
-      <th>107187</th>
+      <th>48686</th>
       <td>False</td>
       <td>A</td>
-      <td>2019-11-26</td>
-      <td>0x56a24d</td>
+      <td>2019-12-31</td>
+      <td>0x4561c4</td>
     </tr>
     <tr>
-      <th>73723</th>
+      <th>40935</th>
       <td>False</td>
       <td>A</td>
-      <td>2019-12-03</td>
-      <td>0x53a5ae</td>
+      <td>2019-09-15</td>
+      <td>0x781411</td>
     </tr>
     <tr>
-      <th>91310</th>
+      <th>30658</th>
       <td>False</td>
       <td>A</td>
-      <td>2020-06-19</td>
-      <td>0x3c4442</td>
+      <td>2019-08-28</td>
+      <td>0x2c5574</td>
     </tr>
     <tr>
-      <th>11925</th>
+      <th>38313</th>
       <td>False</td>
       <td>A</td>
-      <td>2020-07-30</td>
-      <td>0x1a937e</td>
+      <td>2019-08-14</td>
+      <td>0x6e825d</td>
     </tr>
   </tbody>
 </table>
-<p>2317 rows × 4 columns</p>
+<p>2941 rows × 4 columns</p>
 </div>
 </div>
 
@@ -13798,16 +13798,16 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[0.028053517479499357,
- 0.03754855416486835,
- 0.014674147604661208,
- 0.031074665515753108,
- 0.04229607250755288,
- 0.027190332326283984,
- 0.015537332757876582,
- 0.02028485110056108,
- 0.020716443677168767,
- 0.027190332326283984]</pre>
+<pre>[0.020401224073444413,
+ 0.01700102006120366,
+ 0.017341040462427737,
+ 0.022441346480788826,
+ 0.027201632097925865,
+ 0.03230193811628698,
+ 0.03060183611016662,
+ 0.01394083645018701,
+ 0.026521591295477737,
+ 0.021421285277116647]</pre>
 </div>
 
 </div>
@@ -13857,16 +13857,16 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[0.004998065655210986,
- 0.004885643217796243,
- 0.005099795482042161,
- 0.004973512257647554,
- 0.004866412523490043,
- 0.004973512257647554,
- 0.005208698394554371,
- 0.005111492117047358,
- 0.00507030726816859,
- 0.0050939261226853804]</pre>
+<pre>[0.005123348154191923,
+ 0.005109586931587035,
+ 0.0051551578387677675,
+ 0.005001444675672144,
+ 0.005049045360393573,
+ 0.005104982555093356,
+ 0.0050110379014435885,
+ 0.005141576198164069,
+ 0.00504432613294714,
+ 0.005146111887704192]</pre>
 </div>
 
 </div>
@@ -13914,16 +13914,16 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[5.61287494297934,
- 7.685488377066817,
- 2.8773992322502107,
- 6.248032357409182,
- 8.691427679710849,
- 5.467028312733037,
- 2.982958808695982,
- 3.968479386461145,
- 4.0858359427695214,
- 5.3377947915644235]</pre>
+<pre>[3.9820100956348505,
+ 3.327278758309167,
+ 3.36382337937741,
+ 4.4869728520535785,
+ 5.387480237611789,
+ 6.327531537607041,
+ 6.10688578135695,
+ 2.7113935324278464,
+ 5.257707490848245,
+ 4.162615532767441]</pre>
 </div>
 
 </div>
@@ -14123,7 +14123,7 @@ WOW!!significant improvement!
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[389, 633, 2317, 710, 1348, 374, 1354, 745, 1749, 642]</pre>
+<pre>[2622, 2941, 1353, 1052, 705, 554, 1233, 542, 1587, 195]</pre>
 </div>
 
 </div>
@@ -14157,7 +14157,6 @@ WOW!!significant improvement!
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[&#39;Higher bound&#39;,
- &#39;Higher bound&#39;,
  &#39;Did not stop early&#39;,
  &#39;Higher bound&#39;,
  &#39;Higher bound&#39;,
@@ -14165,7 +14164,8 @@ WOW!!significant improvement!
  &#39;Higher bound&#39;,
  &#39;Higher bound&#39;,
  &#39;Higher bound&#39;,
- &#39;Higher bound&#39;]</pre>
+ &#39;Higher bound&#39;,
+ &#39;Lower bound&#39;]</pre>
 </div>
 
 </div>
@@ -14176,7 +14176,7 @@ WOW!!significant improvement!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statistics</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -14193,13 +14193,13 @@ WOW!!significant improvement!
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>1026.1</pre>
+<pre>1278.4</pre>
 </div>
 
 </div>
@@ -14210,10 +14210,10 @@ WOW!!significant improvement!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#(mean(rounds_ran[0:2])+mean(rounds_ran[3:]))/2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#(mean(rounds_ran[0:1]+rounds_ran[2:]))</span>
 </pre></div>
 
     </div>
@@ -14226,13 +14226,13 @@ WOW!!significant improvement!
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>749.9285714285714</pre>
+<pre>1093.6666666666667</pre>
 </div>
 
 </div>
@@ -14243,15 +14243,74 @@ WOW!!significant improvement!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We&#39;re able to stop the test 9 out of 10 times, with an average of stopping at ~1026 rounds/iterations.</span>
-<span class="c1">#Or if not including the one time not stopping early and going to 2317 rounds, then an average of 750 rounds/iterations</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We&#39;re able to stop the test 9 out of 10 times, with an average of stopping at ~1278 rounds/iterations.</span>
+<span class="c1">#Or if not including the one time not stopping early and going to 2317 rounds, then an average of ~1094 rounds/iterations</span>
 
 <span class="c1">#Note, that this varies greatly when rerunning with different seeds/randomizations.</span>
 <span class="c1">#This run is a pretty balanced one in terms of having just one non-stopping eraly,</span>
-<span class="c1">#and one lower bound as well as 7 upper bound reasons for stopping</span>
+<span class="c1">#and 2 lower bounds as well as 7 upper bound reasons for stopping</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">upper_bound</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lower_bound</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.99573227355399
+-1.6094379124341005
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>

@@ -105,7 +105,7 @@ scipy.stats.norm.ppf(1-.05)
 p_bar = (p + p_head)/2
 
 #difference of conversion rate 
-optimal_sample = (st.norm.ppf(0.95)*math.sqrt(2*p_bar*(1-p_bar)) + st.norm.ppf(0.8)*math.sqrt(p*(1-p)+p_head*(1-p_head)))**2 /((p_head-p)**2)
+optimal_sample = (st.norm.ppf(0.975)*math.sqrt(2*p_bar*(1-p_bar)) + st.norm.ppf(0.8)*math.sqrt(p*(1-p)+p_head*(1-p_head)))**2 /((p_head-p)**2)
 optimal_sample = int(optimal_sample)
 
 print("The optimal size should be:", optimal_sample)
@@ -271,26 +271,45 @@ rounds_ran
 reason
 
 
-# In[27]:
+# In[35]:
 
 
 from statistics import mean
 mean(rounds_ran)
 
 
-# In[38]:
+# In[37]:
 
 
-#(mean(rounds_ran[0:2])+mean(rounds_ran[3:]))/2
+#(mean(rounds_ran[0:1]+rounds_ran[2:]))
 
 
-# In[28]:
+# In[29]:
 
 
-#We're able to stop the test 9 out of 10 times, with an average of stopping at ~1026 rounds/iterations.
-#Or if not including the one time not stopping early and going to 2317 rounds, then an average of 750 rounds/iterations
+#We're able to stop the test 9 out of 10 times, with an average of stopping at ~1278 rounds/iterations.
+#Or if not including the one time not stopping early and going to 2317 rounds, then an average of ~1094 rounds/iterations
 
 #Note, that this varies greatly when rerunning with different seeds/randomizations.
 #This run is a pretty balanced one in terms of having just one non-stopping eraly,
-#and one lower bound as well as 7 upper bound reasons for stopping
+#and 2 lower bounds as well as 7 upper bound reasons for stopping
+
+
+# In[ ]:
+
+
+
+
+
+# In[30]:
+
+
+print(upper_bound)
+print(lower_bound)
+
+
+# In[ ]:
+
+
+
 
